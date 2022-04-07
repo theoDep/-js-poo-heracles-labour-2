@@ -6,3 +6,5 @@ class Weapon {
         this.damage = DEFAULT_DAMAGE;
     }
 }
+
+module.exports = Weapon;

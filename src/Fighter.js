@@ -22,7 +22,7 @@ class Fighter {
     fight(defender) {
         const attackPoints = this.getRandomInt(this.getDamage());
 
-        const damages = Math.max(attackPoints - defender.getDefense(), 0);
+        const damages = Math.max(attackPoints - defender.getDefense(), 5);
 
         defender.life = Math.max(defender.life - damages, 0);
     }

@@ -6,7 +6,10 @@ const heracles = new Fighter("🧔 Heracles", 20, 6);
 
 const sword = new Weapon('Sword');
 
+const shield = new Weapon('Shield');
+
 heracles.weapon = sword;
+heracles.shield = shield;
 
 /** Create the opponent  */
 const boar = new Fighter("🐗 Erymanthian Boar", 25, 12);
@@ -30,3 +33,5 @@ const score = (fighter1, fighter2) => {
     loser: fighter1
   };
 };
+
+console.log(3 + null)

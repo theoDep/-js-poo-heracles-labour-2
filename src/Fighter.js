@@ -9,6 +9,9 @@ class Fighter {
         this.weapon = null;
     }
 
+    getDamage() {
+        return this.strength + this.weapon.damage
+    }
 
     // Launch a fight
     fight(defender) {

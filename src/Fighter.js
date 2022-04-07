@@ -14,11 +14,15 @@ class Fighter {
         return this.strength + this.weapon.damage
     }
 
+    getDefense() {
+        return this.dexterity + this.shield.protection
+    }
+
     // Launch a fight
     fight(defender) {
         const attackPoints = this.getRandomInt(this.getDamage());
 
-        const damages = Math.max(attackPoints - defender.dexterity, 0);
+        const damages = Math.max(attackPoints - this.getDefense, 0);
 
         defender.life = Math.max(defender.life - damages, 0);
     }

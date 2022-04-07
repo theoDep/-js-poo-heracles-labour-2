@@ -6,6 +6,8 @@ const heracles = new Fighter("🧔 Heracles", 20, 6);
 
 const sword = new Weapon('Sword');
 
+heracles.weapon = sword;
+
 /** Create the opponent  */
 const boar = new Fighter("🐗 Erymanthian Boar", 25, 12);
 
